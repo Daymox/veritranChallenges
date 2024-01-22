@@ -2,6 +2,7 @@
 Challenges to review OOP
 
 Para realizar la ejecución de los archivos es necesario tener instalado node.js
+  
   ¿Cómo instalar node.js?
   1. Abrir la dirección web https://nodejs.org.
   2. La pagina mostrará automáticamente la opción de descargar según la plataforma identificada.
