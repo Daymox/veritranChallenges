@@ -8,6 +8,12 @@ class Jugador {
 		this.impugnado = false;
 	}
 
+	// -- Punto #1 -- //
+	esSospechoso() {
+		return this.nivelSospecha > 50;
+	}
+
+	// -- Punto #2 -- //
 	agregarItem(item) {
 		this.mochila.push(item);
 	}
