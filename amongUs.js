@@ -35,3 +35,11 @@ class Jugador {
 		return false;
 	}
 }
+
+class Tarea {
+	constructor(nombre, requerimiento, incrementoSospecha) {
+		this.nombre = nombre;
+		this.requerimiento = requerimiento;
+		this.incrementoSospecha = incrementoSospecha;
+	}
+}
