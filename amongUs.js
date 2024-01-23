@@ -36,6 +36,27 @@ class Jugador {
 	}
 }
 
+class Nave {
+	constructor() {
+		this.nivelOxigeno = 100;
+	}
+
+	tieneBarraOxigeno() {
+		if (this.nivelOxigeno > 0) {
+			return true;
+		}
+		return false;
+	}
+
+	reducirOxigeno(cantidad) {
+		this.nivelOxigeno -= cantidad;
+	}
+
+	getNivelOxigeno() {
+		return this.nivelOxigeno;
+	}
+}
+
 class Sabotaje {
 	constructor(nombre, incrementoSospecha) {
 		this.nombre = nombre;
