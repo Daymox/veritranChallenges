@@ -7,7 +7,18 @@ class Jugador {
 		this.tareaRealizadas = [];
 		this.impugnado = false;
 	}
-	
+
+	// -- Punto #1 -- //
+	esSospechoso() {
+		return this.nivelSospecha > 50;
+	}
+
+	// -- Punto #2 -- //
+	agregarItem(item) {
+		this.mochila.push(item);
+	}
+
+	// -- Punto #3 -- //
 	completarTareas() {
 		if (this.tareaRealizadas.length === todasTareas.length) {
 			throw new Error('Ganaron los Tripulantes');
