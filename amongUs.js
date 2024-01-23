@@ -8,6 +8,24 @@ class Jugador {
 		this.impugnado = false;
 	}
 
+	// -- Punto #1 -- //
+	esSospechoso() {
+		return this.nivelSospecha > 50;
+	}
+
+	// -- Punto #2 -- //
+	agregarItem(item) {
+		this.mochila.push(item);
+	}
+
+	// -- Punto #3 -- //
+	completarTareas() {
+		if (this.tareaRealizadas.length === todasTareas.length) {
+			throw new Error('Ganaron los Tripulantes');
+		}
+	}
+
+	// -- Punto #4 -- //
 	realizarTarea(tarea) {
 		if (this.mochila.includes(tarea.requerimiento)) {
 			this.nivelSospecha += tarea.incrementoSospecha;
