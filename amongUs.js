@@ -57,6 +57,14 @@ class Nave {
 	}
 }
 
+class Tarea {
+	constructor(nombre, requerimiento, incrementoSospecha) {
+		this.nombre = nombre;
+		this.requerimiento = requerimiento;
+		this.incrementoSospecha = incrementoSospecha;
+	}
+}
+
 class Sabotaje {
 	constructor(nombre, incrementoSospecha) {
 		this.nombre = nombre;
